@@ -1,19 +1,19 @@
 import React from "react";
 import Feed from "./Feed.js";
-import QHeader from "./QHeader";
-import "./Quora.css";
-import Sidebar from "./Sidebar";
+import SHeader from "./SHeader.js";
+import "./Sliet.css";
+import Sidebar from "./Sidebar.js";
 import Widget from "./Widget.js";
-
+import Chatbot from "../Chatbot.js";
 function Quora() {
   return (
     <div className="quora">
-      <QHeader />
+      <SHeader />
       <div className="quora__contents">
         <div className="quora__content">
           <Sidebar />
           <Feed />
-          <Widget />
+         <Chatbot></Chatbot>
         </div>
       </div>
     </div>

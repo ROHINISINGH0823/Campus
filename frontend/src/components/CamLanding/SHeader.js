@@ -10,7 +10,7 @@ import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import CloseIcon from "@material-ui/icons/Close";
 
-import "./QHeader.css";
+import "./SHeader.css";
 import { Avatar, Button, Input } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 // import db, { auth } from "../firebase";
@@ -21,7 +21,7 @@ import axios from "axios";
 import { token } from "../../Utils/decodedToken";
 import { successModal } from "../../Utils/AlertModal";
 
-function QHeader() {
+function SHeader() {
   // const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
@@ -101,13 +101,13 @@ function QHeader() {
           <div onClick = {() => window.location.href = '/allUsers'} className="qHeader__icon">
             <PeopleAltOutlinedIcon />
           </div>
-          <div onClick = {() => window.location.href = '/notifications'} className="qHeader__icon">
+          <div onClick = {() => window.location.href = 'https://campuslienchat.netlify.app'} className="qHeader__icon">
             <NotificationsOutlinedIcon />
           </div>
         </div>
         <div className="qHeader__input">
           <SearchIcon />
-          <input type="text" placeholder="Search Quora" />
+          <input type="text" placeholder="Search CampusLien" />
         </div>
         <div className="qHeader__Rem">
           <div
@@ -209,4 +209,4 @@ function QHeader() {
   );
 }
 
-export default QHeader;
+export default SHeader;

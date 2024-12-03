@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   padding: 50px 0;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color:#e8f0f9;
   min-width: fit-content;
   width: 100%;
 }

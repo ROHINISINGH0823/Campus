@@ -1,7 +1,7 @@
 import { Avatar } from "@material-ui/core";
 import React from "react";
 import { useSelector } from "react-redux";
-import "./QuoraBox.css";
+import "./CamBox.css";
 
 export default function QuorBox() {
   // const user = useSelector(selectUser);

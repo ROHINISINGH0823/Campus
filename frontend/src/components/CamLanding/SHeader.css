@@ -1,7 +1,7 @@
 .qHeader {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: #235284;
   position: sticky;
   z-index: 1000;
   top: 0px;
@@ -38,7 +38,7 @@
 }
 
 .qHeader__icon > .MuiSvgIcon-root {
-  color: gray;
+  color: white;
   font-size: xx-large;
   margin-left: 20px;
   margin-right: 20px;

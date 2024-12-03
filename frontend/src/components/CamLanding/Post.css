@@ -182,7 +182,7 @@
 }
 
 .modal__button > .cancle:hover {
-  color: red;
+  color: black;
 }
 .modal__button > .add {
   border: none;

@@ -3,17 +3,21 @@ import React, { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import Auth from "./components/auth";
-import QuoraLanding from "./components/QuoraLanding";
+import CamLanding from "./components/CamLanding";
 // import { auth } from "./firebase";
 import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
 import { logout } from "./Action/User";
-import AllSpaces from "./components/QuoraLanding/AllUser";
-import Quorans from './components/QuoraLanding/Quorans'
-import AllUsers from './components/QuoraLanding/AllSpaces'
+import AllSpaces from "./components/CamLanding/AllUser";
+import Slietians from './components/CamLanding/Slietians'
+import Chatbot from "./components/Chatbot";
+import { useState } from "react";
+
+import AllUsers from './components/CamLanding/AllSpaces'
 // import { decodeToken, isExpired } from "react-jwt";
 // import myDecodedToken from "./Utils/decodedToken";
 
 function App() {
+  const [selectedDepartment, setSelectedDepartment] = useState("");
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
   console.log(userLogin);
@@ -89,9 +93,9 @@ function App() {
       <BrowserRouter>
         <Switch>
           <main>
-            <PrivateRoute exact path="/" component={QuoraLanding} />
+            <PrivateRoute exact path="/" component={CamLanding} />
             <PrivateRoute exact path = '/allSpaces' component = {AllSpaces} />
-            <PrivateRoute exact path = '/myQuestions' component = {Quorans} />
+            <PrivateRoute exact path = '/myQuestions' component = {Slietians} />
             <PrivateRoute exact path = '/allUsers' component = {AllUsers} />
             <Route exact path="/auth" component={Auth} />
           </main>

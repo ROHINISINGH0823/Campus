@@ -1,0 +1,19 @@
+[
+    {
+      "question": "What services do you offer?",
+      "answer": "We offer web development, app development, and digital marketing services."
+    },
+    {
+      "question": "Where is your company located?",
+      "answer": "Our company is located in New York, USA."
+    },
+    {
+      "question": "How can I contact support?",
+      "answer": "You can email us at support@example.com."
+    },
+    {
+      "question": "Where can I chat?",
+      "answer": "<a href='https://campuslienchat.netlify.app' target='_blank'>Click here to chat</a>"
+    }
+  ]
+  

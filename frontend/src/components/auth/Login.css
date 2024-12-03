@@ -7,7 +7,7 @@
   min-width: fit-content;
   height: 100vh;
   /* background: url("http://qsfs.fs.quoracdn.net/-4-images.home.illo_1920.png-26-e9e6fbe02d908942.png"); */
-  background: url("https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png");
+  background: url("D:\Campus\Campus\frontend\build\login.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -20,9 +20,12 @@
   height: fit-content;
   /* width: 100%; */
   /* padding: 20px; */
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2); /* White background with transparency */
   border-radius: 10px;
   margin: 10px;
+ 
+  backdrop-filter: blur(10px); /* Adjust the blur value for more or less effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .login__logo {
@@ -156,24 +159,25 @@
 }
 
 .login__inputField > input {
-  padding: 10px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border: 1px solid lightgray;
-  background-color: rgb(236, 236, 236);
-  border-radius: 3px;
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px; /* Optional: add some padding for better aesthetics */
+  border: 1px solid #ccc; /* Optional: add border for better visibility */
+  border-radius: 5px; /* Optional: round the corners */
+  font-size: 16px; /* Optional: adjust font size */
+  outline: none; /* Remove outline on focus */
+  transition: border-color 0.3s; 
 }
 
 .login__inputField > input:focus {
-  border: 2px solid #000;
+  border-color: royalblue;
 }
 
 .login__forgButt {
-  padding-left: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; /* Align elements in a column */
+  align-items: center;    /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  margin-top: 20px;   
 }
 
 .login__forgButt > small {
@@ -187,19 +191,17 @@
 }
 
 .login__forgButt > button {
-  padding: 9px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  background-color: #222;
-  color: white;
-  font-weight: 500;
-  font-size: 15px;
-  cursor: pointer;
+  padding: 10px 20px;       /* Add some padding to the button */
+  border: none;             /* Remove default border */
+  border-radius: 5px;      /* Optional: round corners */
+  background-color:#235284 ; /* Change button background color */
+  color: white;             /* Change button text color */
+  cursor: pointer;          /* Change cursor on hover */
+  font-size: 16px;          /* Adjust font size */
+  transition: background-color 0.3s; 
 }
 .login__forgButt > button:hover {
-  background-color: #eee;
-  color: #222;
+  background-color: darkblue;
 }
 
 .login__emailPass > button:hover {

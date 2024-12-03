@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import QuorBox from "./QuorBox";
+import QuorBox from "./CamBox";
 import "./Feed.css";
 import Post from "./Post";
 import db from "../../firebase";
 import axios from "axios";
 import { token } from "../../Utils/decodedToken";
+
 
 function Feed() {
   const [posts, setPosts] = useState([]);
@@ -26,6 +27,7 @@ function Feed() {
   return (
     <div className="feed">
       <QuorBox />
+   
       {posts.map((_post) => (
         <Post
           key={_post._id}
